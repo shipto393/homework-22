@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>homework-22</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- First Box Start -->
+    <div class="game-box" id="startScreen">
+      <h1 class="title">Wanna Play game?</h1>
+      <input
+        type="text"
+        id="nameInput"
+        class="name-input"
+        placeholder="What is your name"
+      />
+      <button class="start-btn" id="startGameBtn">Start Game</button>
+      <div class="error-msg" id="errorMsg" hidden>Name Is Missing</div>
+    </div>
+    <!-- First Box End -->
+
+    <!-- Second Box Start -->
+    <div class="game-box" id="playerOneScreen">
+      <h1 class="title" id="playerOneTitle"></h1>
+      <input
+        type="text"
+        id="numberInput"
+        class="name-input"
+        placeholder="Give a number"/>
+      <button class="start-btn" id="letsPlayBtn">Lets Play</button>
+      <div class="error-msgg" id="numberErrorMsg" hidden>Number is missing</div>
+    </div>
+    <!-- Second Box End -->
+
+    
+
+  <script src="js/script.js"></script>
+</body>
+</html>

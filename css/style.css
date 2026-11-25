@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 850px;
+}
+
+.game-box {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f1f24;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.name-input {
+  width: 100%;
+  max-width: 430px;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid #d5d5dc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.25s ease;
+}
+
+.name-input:focus {
+  border-color: #673de6;
+}
+
+.start-btn {
+  background-color: #673de6;
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #542ec7;
+}
+
+.error-msg {
+  background-color: #c8322b;
+  color: #ffffff;
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ***** */
+
+#playerOneScreen {
+  display: none;
+}
+
+#playerOneScreen[style*="display: block"] {
+  display: flex !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
